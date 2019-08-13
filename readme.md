@@ -31,33 +31,35 @@ For more information, please visit:
 ### Images:
 Use images in your CSS with the function: 
 
-´´´contentDock-Image(name-of-your-image)´´´
+``` css
+contentDock-Image(name-of-your-image)
+```
 
 The image with the defined name has to be stored in your file repository of your contentDock Account.
   
 Example:
-´´´
+```css
   background-image: url('contentDock-Image(my-image-name)');
   background-repeat: repeat-y;
   background-size: 100%; 
-´´´
+```
 
 ### Fonts
 Use the pre-installed fonts of contentDock or load your own fonts into your contentDock account. Use the font name in CSS as it will be displayed for your own font files in the file repository. The CSS font name for the pre-installed fonts can be found at 
 [contentDock pre-installed fonts](https://www.contentdock.com/en/support/pre-installed-fonts)
 
 Example:
-´´´
+``` css
   font-family: OpenSans-Regular;
-´´´
+```
 
 ### Disable Scrolling of the RTE
 If you want to prevent the general scrolling of the RTE element, please add the following comment to your CSS file at the beginning:
 
 Example
-´´´
+``` css
 /* CONTENTDOCK:DISABLE-SCROLLING */
-´´´
+```
 
 ### License
 This file is licensed under the MIT License
