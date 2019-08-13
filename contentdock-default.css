@@ -1,0 +1,353 @@
+/* _________________________________________________
+
+Original Author: Michael Schild
+URL: www.contentDock.com
+copyright: contentDock®, EDIT GmbH
+
+
+Use this CSS file for your own projects. 
+You are allowed to use it without restrictions and 
+adapt it for yourself.
+
+
+Notice:
+
+  Images:
+  Use images in your CSS with the function: 
+  contentDock-Image(name-of-your-image). 
+  The image with the defined name has to be stored in your file repository
+  of your contentDock Account.
+  
+  Example:
+  background-image: url('contentDock-Image(my-image-name)');
+  background-repeat: repeat-y;
+  background-size: 100%; 
+
+
+  Fonts:
+  Use the pre-installed fonts of contentDock or load your own fonts into your 
+  contentDock account. Use the font name in CSS as it will be displayed for 
+  your own font files in the file repository. The CSS font name for 
+  the pre-installed fonts can be found at 
+  https://www.contentdock.com/en/support/pre-installed-fonts
+
+  Example:
+  font-family: OpenSans-Regular;
+
+
+License:
+This file is licensed under the MIT License
+____________________________________________________ */
+
+
+/*  ROOT
+____________________________________________________ */
+
+html {
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(0,0,0,0);
+  
+}
+
+/*  TYPOGRAPHY (Base)
+____________________________________________________ */
+
+body {
+  font-family: OpenSans-Regular;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+  /* shared typographic styles */
+}
+
+h1 { 
+  font-size: 3.0rem;
+}
+
+h2 { 
+  font-size: 2.6rem;
+}
+
+h3 { 
+  font-size: 2.2rem;
+}
+
+h4 { 
+  font-size: 1.8rem;
+}
+
+p, 
+ol,
+ul, 
+dl, 
+address { 
+
+}
+
+ul, 
+ol { 
+  
+}
+
+ul {}
+ol {}
+li ul, 
+li ol { 
+}
+
+dl, 
+dd {}
+dt {}
+
+blockquote  {
+  font-size: 1.2rem;
+  width:60%;
+  margin:50px auto;
+  font-style:italic;
+  color: #555555;
+  padding:1.2rem 30px 1.2rem 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.3;
+  position: relative;
+  background:#EDEDED;  
+}
+
+blockquote::before{
+  font-family: LibreFranklin-Regular;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4rem;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+b, 
+strong  {}
+i, 
+em {}
+
+sup, 
+sub { 
+  font-size: 50%; 
+  line-height: 0;
+  position: relative;
+}
+
+sup { 
+  top: -.3em;
+}
+
+sub { 
+  bottom: -.25em;
+}
+
+address {}
+
+audio, 
+canvas, 
+video {
+  display: inline-block;
+}
+
+pre { 
+  white-space: pre; 
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+}
+
+pre, 
+code { 
+  font-family: SourceCodePro-Regular;
+  font-size: .875rem;
+  line-height: 1.5;
+  display: block;
+  padding: 8.5px;
+  background-color: #f9f9fa;
+  border: 1px solid #d9d9d9;
+  border: 1px solid 1px solid rgba(51,51,51,.1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #262626;
+}
+
+
+/*  RTE Text Styles
+____________________________________________________ */
+
+.fr-text-uppercase {
+    text-transform: uppercase;
+}
+
+.fr-text-spaced {
+    letter-spacing: 1px;
+}
+
+.fr-text-bordered {
+    border-top: solid 1px #262626;
+    border-bottom: solid 1px #262626;
+    padding: 10px 0;
+}
+
+.fr-text-gray {
+    color: #d9d9d9 !important;
+}
+
+/*  RTE Table Styles
+____________________________________________________ */
+
+table {
+  width:100%;
+  table-layout: fixed;
+}
+
+thead {
+  background-color: rgba(255,255,255,0.3);
+ }
+
+tbody {
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.3);
+}
+
+/*  RTE Image Styles
+____________________________________________________ */
+
+img.fr-dib {
+  margin: 5px auto;
+  display: block;
+  float: none;
+  vertical-align: top;
+}
+
+img.fr-dib.fr-fil {
+  margin-left: 0;
+  text-align: left;
+}
+
+img.fr-dib.fr-fir {
+  margin-right: 0;
+  text-align: right;
+}
+
+img.fr-dii {
+  display: inline-block;
+  float: none;
+  vertical-align: bottom;
+  margin-left: 5px;
+  margin-right: 5px;
+  max-width: calc(100% - (2 * 5px));
+}
+
+img.fr-dii.fr-fil {
+  float: left;
+  margin: 5px 10px 10px 0;
+  max-width: calc(100% - 5px);
+}
+
+img.fr-dii.fr-fir {
+  float: right;
+  margin: 5px 0 10px 10px;
+  max-width: calc(100% - 5px);
+}
+
+img.fr-bordered, .fr-img-caption.fr-bordered img {
+  border: 5px solid #d9d9d9;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+img.fr-shadow, .fr-img-caption.fr-shadow img {
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 1px 1px rgba(0,0,0,0.16);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 1px 1px rgba(0,0,0,0.16);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 1px 1px rgba(0,0,0,0.16);
+}
+
+img.fr-rounded, .fr-img-caption.fr-rounded img {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+/*  RTE Video Styles
+____________________________________________________ */
+
+.fr-video.fr-dvb {
+  display: block;
+  clear: both;
+}
+
+.fr-video {
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.fr-video>* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  max-width: 100%;
+  border: 5px solid #000000;
+}
+
+.fr-video {
+  text-align: center;
+  position: relative;
+}
+
+.fr-video.fr-dvb.fr-fvr {
+    text-align: right;
+}
+
+.fr-video.fr-dvb.fr-fvl {
+    text-align: left;
+}
